@@ -1,15 +1,18 @@
 package session9.practica1;
 
 public class Gerente extends Empleado {
+  //Atributos
   private String departamento;
   private double bono;
 
+  //Constructor
   public Gerente(String nombre,int edad, String departamento, double bono) {
     super(nombre, edad);
     this.departamento = departamento;
     this.bono = bono;
   }
 
+  //Getters y Setters
   public String getDepartamento() {
     return departamento;
   }
@@ -26,8 +29,10 @@ public class Gerente extends Empleado {
     this.bono = bono;
   }
 
-  public void mostrarInformacion(){
+  //Métódo de comportamiento
+  @Override
+  public void mostrarInformacion() {
     super.mostrarInformacion();
-    System.out.println("Departamento: " + departamento + "\nBono: " + bono);
+    System.out.println("Departamento: " + departamento + "\nBono: " + bono );
   }
 }
