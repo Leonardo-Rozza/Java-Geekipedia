@@ -11,9 +11,23 @@ public interface OperacionesMatematicas {
   }
 
   static int dividir(int a, int b) {
-    if (a == 0 || b == 0) {
-      throw new Error("Error en el dividir por 0");
+
+    //La intencion de las excepciones verificadas es que podamos colocar un mensaje personalizado para cuando caiga el programa.
+    if (b == 0) {
+      throw new ArithmeticException("No se puede dividir entre 0");
     }
     return a / b;
+
+
+
+    //Excepciones No verificadas.
+    //    try {
+    //    return a / b;
+    //    } catch (ArithmeticException e) {
+    //      System.err.println("No se puede dividir entre 0");
+    //    }
+    //    return 0;
+
+
   }
 }

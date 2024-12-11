@@ -8,7 +8,7 @@ public class MainCalculadora {
     System.out.println(calculadora.multiplicar(2,3));
     System.out.println(calculadora.sumar(2,3));
     System.out.println(calculadora.restar(2,3));
-    System.out.println(OperacionesMatematicas.dividir(10,2));
+    System.out.println(OperacionesMatematicas.dividir(10,0 ));
 
 
   }
